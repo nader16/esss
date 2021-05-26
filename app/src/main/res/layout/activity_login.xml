@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/usernamelogin_txtbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Log in"
+        app:layout_constraintEnd_toStartOf="@+id/signup1_btn"
+        app:layout_constraintStart_toEndOf="@+id/forgetpw_btn"
+        app:layout_constraintTop_toBottomOf="@+id/passwordlogin_txtbox" />
+
+    <Button
+        android:id="@+id/signup1_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Sign Up"
+        app:layout_constraintBaseline_toBaselineOf="@+id/loginbtn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/usernametxtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="UserName"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/usernamelogin_txtbox"
+        app:layout_constraintEnd_toStartOf="@+id/usernamelogin_txtbox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Passwordtxtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Password"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/passwordlogin_txtbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/passwordlogin_txtbox" />
+
+    <EditText
+        android:id="@+id/passwordlogin_txtbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernamelogin_txtbox" />
+
+    <ListView
+        android:id="@+id/customerslistview"
+        android:layout_width="367dp"
+        android:layout_height="291dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup1_btn" />
+
+    <CheckBox
+        android:id="@+id/rememberme_checkBox"
+        android:layout_width="238dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Remember Me"
+        app:layout_constraintBottom_toBottomOf="@+id/loginbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordlogin_txtbox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/forgetpw_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:text="Forget PW?"
+        app:layout_constraintBaseline_toBaselineOf="@+id/loginbtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/usernametxtview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/custnamesignup_txtbox"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usernametxtview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="UserName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/usernamesignup_txtbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernametxtview2" />
+
+    <TextView
+        android:id="@+id/usernametxtview7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="117dp"
+        android:text="Birthdate"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/signup2_btn"
+        app:layout_constraintEnd_toStartOf="@+id/calendarView"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/jobsignup_txtbox" />
+
+    <TextView
+        android:id="@+id/usernametxtview4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:text="Job"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/jobsignup_txtbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernametxtview5" />
+
+    <TextView
+        android:id="@+id/usernametxtview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Gender"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernametxtview6" />
+
+    <TextView
+        android:id="@+id/usernametxtview6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Password"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/passwordsignup_txtbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernametxtview3" />
+
+    <EditText
+        android:id="@+id/custnamesignup_txtbox"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernamesignup_txtbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custnamesignup_txtbox" />
+
+    <EditText
+        android:id="@+id/jobsignup_txtbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usernametxtview4"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/passwordsignup_txtbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernamesignup_txtbox" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="214dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordsignup_txtbox">
+
+        <RadioButton
+            android:id="@+id/malesignup_rdbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/femalesignup_rdbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female" />
+    </RadioGroup>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="213dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scrollbars="none|horizontal|vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobsignup_txtbox" />
+
+    <Button
+        android:id="@+id/signup2_btn"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="sign up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+</android.support.constraint.ConstraintLayout>
